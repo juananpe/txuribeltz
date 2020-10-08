@@ -30,9 +30,6 @@ bideoa.addEventListener("play", function () {
     var frame = buffer.getImageData(0, 0, 320, 120);
     var length = frame.data.length / 4;
 
-    txuribeltza.clearRect(0, 0, 100, 100);
-    txuribeltza.fillText("Welcome", 140, 100);
-    
     for (let i = 0; i < length; i++) {
       let r = frame.data[i * 4 + 0];
       let g = frame.data[i * 4 + 1];
